@@ -1,10 +1,11 @@
 <?php
+require_once 'utils.php';
 // Due to issues with .env, env.php is uaed to continue the project
 require_once 'env.php';
 
 // Trimming url and file names for dynamic routing
 $url = ltrim($_SERVER['REQUEST_URI'], '/');
-$view = 'views/' . ($url ?: 'home') . '.html';
+$view = 'views/' . ($url ?: 'index') . '.php';
 $cssfilename = ($url ?: 'home') . '.css';
 
 if (!file_exists($view)) {

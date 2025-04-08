@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  user-select: none;
+}
+
+header .info {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--secondary);
+  color: white;
+}
+
+header .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .main-header .logo {
+  width: 225px;
+  padding: 20px;
+}
+
+header .main-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header .main-header nav p {
+  padding: 20px;
+}

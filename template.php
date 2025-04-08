@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <?php include_once 'components/header.html'; ?>
+    <?php include_once 'components/header.php'; ?>
     <?= $slot; ?>
-    <?php include_once 'components/footer.html'; ?>
+    <?php include_once 'components/footer.php'; ?>
 </body>
 
 </html>

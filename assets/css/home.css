@@ -1,0 +1,201 @@
+.hero {
+  height: 84vh;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+}
+
+.hero > h1 {
+  font-size: 150px;
+  position: absolute;
+  text-transform: uppercase;
+  background: var(--primary);
+  background-clip: text;
+  color: transparent;
+}
+
+.hero .content {
+  width: 50%;
+  border: 2px solid;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero .content h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.hero .content hr {
+  width: 80%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 5px;
+  background: var(--secondary);
+  border: 2px solid var(--secondary);
+}
+
+.hero .content button {
+  width: 20%;
+  background: var(--secondary);
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.whychooseus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+
+.whychooseus .container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.whychooseus .container .images {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.whychooseus .container .images .shape {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-image: var(--primary);
+  margin-left: -70px;
+  margin-top: -70px;
+  border-image-slice: 1;
+  z-index: -1;
+}
+
+.whychooseus .container .images img {
+  width: 60%;
+}
+
+.whychooseus .container .content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.whychooseus .container .content h2 {
+  font-size: 50px;
+}
+
+.whychooseus .container .content li {
+  list-style: circle;
+  margin-left: 30px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.whychooseus .container .content button {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.whychooseus .container .content button:hover {
+  filter: brightness(0.9);
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  gap: 20px;
+}
+
+.services > h2 {
+  font-size: 80px;
+  text-transform: uppercase;
+  background: var(--primary);
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 5px;
+}
+
+.services hr {
+  width: 80%;
+  border-radius: 25px;
+  background-color: var(--secondary);
+  height: 5px;
+  background-color: var(--secondary);
+}
+
+.services .container {
+  display: flex;
+  gap: 10px;
+  margin: 50px auto;
+}
+
+.services .container .item {
+  width: calc(100% (1 / 3));
+  padding: 20px;
+  border-radius: 25px;
+}
+.services .container .item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.services .container .item img {
+  width: 30%;
+}
+
+.services .container .item h2 {
+  font-size: 30px;
+}
+
+.services .container .item button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 25px;
+  margin-top: 10px;
+  border: 2px solid var(--secondary);
+}
+
+.services .container .item:hover button {
+  background-color: transparent;
+  color: var(--secondary);
+}
+
+.experience .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+
+.experience .container .content {
+  width: 40%;
+}
+
+.experience .container .images {
+  width: 60%;
+  background-color: black;
+}
